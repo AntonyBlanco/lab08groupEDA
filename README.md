@@ -68,9 +68,30 @@
         <tr>
             <td>
             I. SOLUCIÓN DE EJERCICIOS/PROBLEMAS<br>
-                <ul>
+                <ol>
                     <li>Colocar ejercicios</li>
-                </ul>
+					<li></li>
+					<li></li>
+					<li>
+						Solucionar el siguiente ejercicio: (5 puntos)<br>
+						El grafo de palabras se define de la siguiente manera: cada vértice es una palabra
+						en el idioma Inglés y dos palabras son adyacentes si difieren exactamente en una
+						posición. Por ejemplo, las **cords** y los **corps** son adyacentes, mientras que los
+						**corps** y **crops** no lo son.
+						<p>a) Dibuje el grafo definido por las siguientes palabras: words cords corps coops
+crops drops drips grips gripe grape graph</p> 
+						<p>Segun el enunciado, se definen los siguientes requisitos para que 2 vértices sean adyacentes:</p>
+						<ul>
+							<li>Misma cantidad de letras</li>
+							<li>Mismas letras en la misma posición, menos una de las letras</li>
+						</ul>
+						<p>Se definen los casos para que no exista adyacencia:</p>
+						<ul>
+							<li>Mismas letras pero al menos dos intercambiaron posición</li>
+						</ul>
+						<p>b) Mostrar la lista de adyacencia del grafo.</p>
+					</li>
+                </ol>
             </td>
         </tr>
         <tr>
