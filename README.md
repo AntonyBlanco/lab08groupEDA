@@ -89,6 +89,53 @@ crops drops drips grips gripe grape graph</p>
 						<ul>
 							<li>Mismas letras pero al menos dos intercambiaron posición</li>
 						</ul>
+                        <p>A continuación se muestra el procedimiento visual para construir el grafo:</p>
+                        <ul>
+                            <li>
+                                <p>Se inserta el nodo "words" al grafo vacío, al no existir otros nodos entonces no se compara</p>
+                                <img src="./imagenesEj4/graph01.png">
+                            </li>
+                            <li>
+                                <p>Se inserta el nodo "cords", el grafo posee un unico nodo, entonces se comparan los nodos para verificar si pueden ser adyacentes, como solo difieren de la letra en la posicion 0 entonces son adyacentes</p>
+                                <img src="./imagenesEj4/graph02.png">
+                            </li>
+                            <li>
+                                <p>Se inserta el nodo "corps", se comparan los nodos existentes con el nodo a insertar y tenemos que solo "cords" es adyacente a "corps"</p>
+                                <img src="./imagenesEj4/graph03.png">
+                            </li>
+                            <li>
+                                <p>Se inserta el nodo "coops", se comparan los nodos existentes con el nodo a insertar y tenemos que solo "corps" es adyacente a "coops"</p>
+                                <img src="./imagenesEj4/graph04.png">
+                            </li>
+                            <li>
+                                <p>Se inserta el nodo "crops", se comparan los nodos existentes con el nodo a insertar y tenemos que solo "coops" es adyacente a "crops"</p>
+                                <img src="./imagenesEj4/graph05.png">
+                            </li>
+                            <li>
+                                <p>Se inserta el nodo "drops", se comparan los nodos existentes con el nodo a insertar y tenemos que solo "crops" es adyacente a "drops"</p>
+                                <img src="./imagenesEj4/graph06.png">
+                            </li>
+                            <li>
+                                <p>Se inserta el nodo "drips", se comparan los nodos existentes con el nodo a insertar y tenemos que solo "drops" es adyacente a "drips"</p>
+                                <img src="./imagenesEj4/graph07.png">
+                            </li>
+                            <li>
+                                <p>Se inserta el nodo "grips", se comparan los nodos existentes con el nodo a insertar y tenemos que solo "drips" es adyacente a "grips"</p>
+                                <img src="./imagenesEj4/graph08.png">
+                            </li>
+                            <li>
+                                <p>Se inserta el nodo "gripe", se comparan los nodos existentes con el nodo a insertar y tenemos que solo "grips" es adyacente a "gripe"</p>
+                                <img src="./imagenesEj4/graph09.png">
+                            </li>
+                            <li>
+                                <p>Se inserta el nodo "grape", se comparan los nodos existentes con el nodo a insertar y tenemos que solo "gripe" es adyacente a "grape"</p>
+                                <img src="./imagenesEj4/graph10.png">
+                            </li>
+                            <li>
+                                <p>Se inserta el nodo "graph", se comparan los nodos existentes con el nodo a insertar y tenemos que solo "grape" es adyacente a "graph"</p>
+                                <img src="./imagenesEj4/graph11.png">
+                            </li>
+                        </ul>
 						<p>b) Mostrar la lista de adyacencia del grafo.</p>
 					</li>
                 </ol>
