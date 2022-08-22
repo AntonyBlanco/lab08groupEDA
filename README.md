@@ -380,11 +380,22 @@ crops drops drips grips gripe grape graph</p>
                             </li>
                         </ul>
 						<p>b) Mostrar la lista de adyacencia del grafo.</p>
-					</li>
-                </ol>
-            </td>
-        </tr>
-        <tr>
+
+<pre>
+"words" -> ["cords"]
+"cords" -> ["words", "corps"]
+"corps" -> ["cords", "coops"]
+"coops" -> ["corps", "crops"]
+"crops" -> ["coops", "drops"]
+"drops" -> ["crops", "drips"]
+"drips" -> ["drops", "grips"]
+"grips" -> ["drips", "gripe"]
+"gripe" -> ["grips", "grape"]
+"grape" -> ["gripe", "graph"]
+"graph" -> ["grape"]
+                        </pre>
+
+
 
 #
 <div align="center">
