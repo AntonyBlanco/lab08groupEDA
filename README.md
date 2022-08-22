@@ -348,11 +348,24 @@ crops drops drips grips gripe grape graph</p>
 
 ¿Cuantas variantes del algoritmo de Dijkstra hay y cuál es la diferencia entre
 ellas?
--   Completar... 
+-   El algoritmo existe en muchas variantes. El algoritmo original de Dijkstra encontró la ruta más corta entre dos nodos dados, pero una variante más común fija un solo nodo como el nodo "fuente" y encuentra las rutas más cortas desde la fuente a todos los demás nodos en el gráfico, produciendo una ruta más corta árbol.
+
+-   En presentaciones comunes del algoritmo de Dijkstra, inicialmente todos los nodos se ingresan en la cola de prioridad. Sin embargo, esto no es necesario: el algoritmo puede comenzar con una cola de prioridad que contiene solo un elemento e insertar nuevos elementos a medida que se descubren (en lugar de hacer una disminución de clave, verifique si la clave está en la cola; si es, disminuya su clave, de lo contrario insértela). Esta variante tiene los mismos límites en el peor de los casos que la variante común, pero mantiene una cola de prioridad más pequeña en la práctica, lo que acelera las operaciones de la cola.
 
 Invetigue sobre los ALGORITMOS DE CAMINOS MINIMOS e indique, ¿Qué
 similitudes encuentra, qué diferencias, en qué casos utilizar y porque?
--   Completar... 
+
+-   Dijkstra: resuelve el problema de los caminos más cortos desde un único nodo origen hasta todos los otros nodos del grafo (aunque aplicando una regla de repetición del algoritmo, se puede automatizar la resolución del problema desde todos los nodos de origen hasta todos los nodos del grafo).
+
+-   Bellman-Ford: resuelve el problema de los caminos más cortos desde un origen permitiendo que la ponderación de los nodos sea negativa.
+
+-   Algoritmo de Búsqueda A*: resuelve el problema de los caminos más cortos entre un par de nodos usando la heurística para agilizar la búsqueda.
+
+-   Algoritmo de Floyd-Warshall: resuelve el problema de los caminos más cortos entre todos los nodos.
+
+-   Algoritmo de Johnson: resuelve el problema de los caminos más cortos entre todos los nodos y puede ser más rápido que el de Floyd-Warshall en grafos de baja densidad.
+
+-   Algoritmo de Viterbi: resuelve el problema del camino estocástico más corto con un peso probabilístico adicional en cada nodo.
 
 #
 <div align="center">
@@ -380,4 +393,5 @@ similitudes encuentra, qué diferencias, en qué casos utilizar y porque?
 -   https://www.w3schools.com/java/
 -   https://www.eclipse.org/downloads/packages/release/2022-03/r/eclipse-ide-enterprise-java-and-web-developers
 -   https://lineadecodigo.com/java/usar-una-hashtable-java/
--   https://es.frwiki.wiki/wiki/Java_hashCode()
+-  https://hmong.es/wiki/Dijkstra%27s_algorithm
+-   http://scielo.sld.cu/scielo.php?script=sci_arttext&pid=S1815-59362017000100004
