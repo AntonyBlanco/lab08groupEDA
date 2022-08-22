@@ -64,8 +64,53 @@
 Implementar el cogido de Grafo cuya representacion sea realizada mediante
 LISTA DE ADYACENCIA. 
 
--   Completar...
--	Completar... 
+##	Pasos
+# 
+- Implementamos un metodo para los nodos con un vertice  unidireccional
+```sh 
+	 public static void addEdge(LinkedList<LinkedList<Integer>> Adj, int u,int v)
+    {
+        Adj.get(u).add(v);
+    }
+ 
+```
+- Como siguiete paso metodo para mostrar la lista de adyacencia
+```sh 
+	public static void printadjacencylist(LinkedList<LinkedList<Integer> > adj)
+    {
+        for (int i = 0; i < adj.size(); ++i) {
+            if (adj.get(i).size() != 0) {
+                System.out.print(i + "->");
+                for (int v : adj.get(i)) {
+                    System.out.print(v + " ");
+                }
+                System.out.println();
+            }
+        }
+    }
+```
+- Como ultimo paso en metodo main se inserta el numero de vertices con sus valores como ejemplo.
+```sh 
+	public static void main(String[] args) {
+        int V = 5;
+ 
+        LinkedList<LinkedList<Integer>> adj = new LinkedList<LinkedList<Integer>>();
+ 
+        for (int i = 0; i < V; ++i) {
+            adj.add(new LinkedList<Integer>());
+        }
+   
+        addEdge(adj, 0, 1);
+        addEdge(adj, 0, 4);
+        addEdge(adj, 1, 2);
+        addEdge(adj, 1, 3);
+        addEdge(adj, 1, 4);
+        addEdge(adj, 2, 3);
+        addEdge(adj, 3, 4);
+ 
+        printadjacencylist(adj);
+    }
+```
 
 #
 ## EJERCICIO 2
@@ -374,6 +419,7 @@ similitudes encuentra, qué diferencias, en qué casos utilizar y porque?
 
 -   las implementaciones resultaron complejas, pero haciendo uso de estructuras de datos aprendidas solventamos los ejercicios.. 
 
+-   Hasta ahora teniamos los conceptos de gráfos comprendidos en gran medida solo teoricamente, peor despúes de este laboratorio hemos profundizado y llegado a entender posibles apliacaciones reales.
 #
 <div align="center">
     <span style="font-weight:bold;"><h2>RETROALIMENTACIÓN </h2></span>
