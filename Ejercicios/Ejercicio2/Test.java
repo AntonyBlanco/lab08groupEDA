@@ -10,10 +10,10 @@ public class Test {
 //		dijkstra.ejecutar();
 		
 		
-		//Prueba de Algoritmo DFS
-		GrafoNDNP grafo2 = new GrafoNDNP("C:\\Users\\EDISSON FRANKLIN\\Desktop\\Entradas\\BFS\\grafo.in");
-		DFS dfs = new DFS(grafo2, 4);
-		dfs.ejecutar();
+//		//Prueba de Algoritmo DFS
+//		GrafoNDNP grafo2 = new GrafoNDNP("C:\\Users\\EDISSON FRANKLIN\\Desktop\\Entradas\\BFS\\grafo.in");
+//		DFS dfs = new DFS(grafo2, 4);
+//		dfs.ejecutar();
 		
 		//Prueba de algoritmo BFS
 		GrafoNDNP grafo1 = new GrafoNDNP("C:\\Users\\EDISSON FRANKLIN\\Desktop\\Entradas\\BFS\\grafo.in");
